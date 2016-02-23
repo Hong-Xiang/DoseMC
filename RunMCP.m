@@ -1,0 +1,33 @@
+function phi = RunMCP(p)
+N = p.N;
+hx = p.hx;
+hy = p.hy; 
+hz = p.hz; 
+nx = p.nx;
+ny = p.ny;
+nz = p.nz;
+e0 = p.e0;
+e1 = p.e1;
+sigmaa0 = p.sigmaa0;
+sigmaa1 = p.sigmaa1;
+sigmas0 = p.sigmas0;
+sigmas1 = p.sigmas1;
+g0 = p.g0;
+g1 = p.g1;
+alpha = p.alpha;
+spx = p.spx;
+spy = p.spy;
+spz = p.spz;
+ssx = p.ssx;
+ssy = p.ssy;
+ssz = p.ssz;
+sdx = p.sdx;
+sdy = p.sdy;
+sdz = p.sdz;
+isISO = p.isISO;
+se = p.se; 
+sse = p.sse;
+ecut = p.ecut;
+phi = RunMC_mex(N, hx, hy, hz, ecut, nx, ny, nz, e0, e1, sigmaa0, sigmaa1, sigmas0, sigmas1, g0, g1, alpha, spx, spy, spz, ssx, ssy, ssz, sdx, sdy, sdz, isISO, se, sse);
+end
+
